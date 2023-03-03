@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .swaper{
+            height: 600px;
+            width: 900px;
+            background-color: aliceblue;
+        }
+        header{
+            height: 100px;
+            width: 900px;
+            background-color: aquamarine;
+            position: relative;
+        }
+        .topmenu li{
+            width: 70px;
+            height: 20px;
+            background-color: antiquewhite;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            list-style-type: none;
+            position: absolute;
+            
+            
+        }
+        .topmenu li:nth-child(1){
+            top: 30px;
+            left: 100px;
+        }
+        .topmenu li:nth-child(2){
+            top: 30px;
+            left: 175px;
+
+        }
+        .topmenu li:nth-child(3){
+            top: 30px;
+            left: 250px;
+            
+        }
+        .topmenu li:nth-child(4){
+            top: 30px;
+            left: 325px;
+        }
+        
+        .topmenu li a{
+            text-decoration: none;
+        }
+        .topmenu li:hover{
+            background-color: chartreuse;
+        }
+        .topmenu li a:hover{
+            color: darkmagenta;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="swaper">
+        <header>
+            <nav>
+                <ul class="topmenu" >
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
