@@ -370,6 +370,7 @@
     text-align: left;
     font-size: 40px;
     font-weight: bold;
+    text-shadow: 0 0 3px black;
    }
    .hashtap{
     height: 40px;
@@ -383,7 +384,7 @@
     position: absolute;
     top: 30px;
     left: -50px;
-    opacity: 90%;
+    opacity: 100%;
     box-shadow: 0 0 10px #888888;
    }
    .hashtap > p{
@@ -391,8 +392,66 @@
     font-weight: bold;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-
+    text-shadow: 0 0 3px black;
    }
+   .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 2000px;
+    margin-top: 20px;
+   }
+   .item1{
+   height: 300px;
+   width: 300px;
+   border: 1px solid red;
+   margin: 2px 2px 2px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+  
+   .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  position: relative;
+  width: 500px;
+  margin: 10px;
+  overflow: hidden;
+  border: 2px solid #0077be;
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.item img {
+  position: relative;
+  width: 300px;
+  margin: 10px auto;
+  border: 2px solid #0077be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  text-align: center;
+  bottom: 0;
+  width: 90%;
+  padding: 10px;
+  margin: 0;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.item:hover .caption {
+  transform: translateY(0);
     </style>
     
 </head>
@@ -655,7 +714,6 @@ câu 5/
     <h1 id="title">CSS Multi-columns Properties</h1>
 </div>
 <div class="Newspaper">
-    
     <div class="news">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     </div>
@@ -747,13 +805,59 @@ câu 5/
    <p>I will be stuck here. </p>
     </div> -->
  </div>
- <div>bài 11</div>
- <div class="bai12">
-<h1 class="h1_bai12">Cascading Style Sheet book</h1>
-<p>My mother is a person I admire most. She devoted a lot of time and energy to the upbringing of my two brothers and 1. Despite working hard, she always made time to teach us many useful things which are necessary and important in our later lives. Moreover, she is a good role model for me to follow. She always tries to get on well with people who live next door and help everyone when they are in difficulties, so most of them respect and love her. I</p>
- <div class="hashtap">
-<p class="best">best seller 2015</p>
- </div>
+ <div>bài 12</div>
+ <div class="gallery">
+    <div class="item">
+      <div class="img-wrap">
+        <img src="/20_NguyenTanLoc_21052841_DHKHMT17B_Menu_Tuan3/img/pic_hoagiay.jpg" alt="Image 1">
+      </div>
+      <div class="caption">
+        Hoa giấy là loại hoa được làm từ giấy màu có độ bền và
+        màu sắc đa dạng. Thường được dùng để trang trí trong các
+        buổi tiệc, lễ hội hoặc trong các sự kiện. Hoa giấy cũng
+        là một món quà độc đáo và ý nghĩa để tặng cho người thân
+        và bạn bè.
+      </div>
+    </div>
+    <div class="item">
+        <div class="img-wrap">
+          <img src="/20_NguyenTanLoc_21052841_DHKHMT17B_Menu_Tuan3/img/pic_hoahuongduong.jpg" alt="Image 2">
+        </div>
+        <div class="caption">
+        Hoa hướng dương là loại hoa được biết đến với tên gọi
+        tiếng Anh là sunflower. Đây là loại hoa có nguồn gốc từ
+        Mỹ và là biểu tượng của ánh nắng và sự tươi vui. Hoa
+        hướng dương có màu vàng rực rỡ và kích thước lớn. Loài
+        hoa này còn được sử dụng để trang trí trong các buổi
+        tiệc cưới, lễ hội và trong các sự kiện quan trọng.
+        </div>
+    </div>
+    <div class="item">
+        <div class="img-wrap">
+          <img src="/20_NguyenTanLoc_21052841_DHKHMT17B_Menu_Tuan3/img/pic_hoasen.jpg" alt="Image 3">
+        </div>
+        <div class="caption">
+        Hoa sen là loài hoa được biết đến với tên gọi "hoa sen
+        Đông Dương", là biểu tượng của sự trong sáng, sự tinh
+        khiết và sự thanh cao. Hoa sen thường được trồng ở các
+        đầm lầy, hồ nước và là loài hoa cội thiêng và quý giá ở
+        nhiều nền văn hóa trên thế giới, đặc biệt là ở châu Á.
+        </div>
+      </div>
+    <div class="item">
+        <div class="img-wrap">
+          <img src="/20_NguyenTanLoc_21052841_DHKHMT17B_Menu_Tuan3/img/pic_rose.jpg " alt="Image 3">
+        </div>
+        <div class="caption">
+        Hoa hồng là loài hoa được yêu thích nhất trên thế giới vì
+        sự đa dạng về màu sắc, hương thơm và ý nghĩa sâu sắc.
+        Hoa hồng thường được tặng để thể hiện tình yêu, tình bạn
+        và sự tri ân. Mỗi màu sắc của hoa hồng cũng mang một ý
+        nghĩa khác nhau, ví dụ như hoa hồng đỏ thể hiện tình
+        yêu, hoa hồng trắng thể hiện tình bạn và hoa hồng vàng
+        thể hiện sự tri ân.
+        </div>
+      </div>
 </div>
 </body>
 </html>
